@@ -29,6 +29,7 @@ func main() {
 	app:= fiber.New()  
 
 	app.Get("/api/:name", GetHandler)
+	app.Post("api", PostHandler)
 
 	log.Fatal(app.Listen(":3001"))
 
