@@ -1,0 +1,9 @@
+POST http://localhost:3001/api  
+Content-Type: application/json  
+
+{
+"name: "munashe" 
+"email": "munashemadhuna@gmail.com"
+}
+
+
