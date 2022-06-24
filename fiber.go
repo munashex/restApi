@@ -25,11 +25,17 @@ func PostHandler(c *fiber.Ctx) error {
 	return nil
 }
 
+func GetFiles(c *fiber.Ctx) error {
+	return c.Download("./files/muna_soft.png")
+}
+
+
 func main() {
 	app:= fiber.New()  
 
 	app.Get("/api/:name", GetHandler)
 	app.Post("api", PostHandler)
+	app.Get("download", GetFiles)
 
 	log.Fatal(app.Listen(":3001"))
 
