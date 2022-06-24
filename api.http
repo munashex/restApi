@@ -6,4 +6,7 @@ Content-Type: application/json
 "email": "munashemadhuna@gmail.com"
 }
 
+Get http://localhost:3001/api 
+Content-Type: application/json 
+
 
