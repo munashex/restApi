@@ -1,1 +1,1 @@
-Basic RestApi with goFiber 
+Basic RestApi with goFiber framework 
